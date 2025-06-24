@@ -1,0 +1,338 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+    overflow-x: hidden;  /* 保證不出現水平滾動條 */
+}
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    padding: 30px 42px;
+}
+.nav-links{
+    display:flex;
+    align-items: center;
+    gap:60px;
+}
+.nav-links a{
+    color: #3F5D45;
+    text-decoration: none;
+}
+#picture{
+    display:none;
+}
+#picture1{
+    display:none;
+}
+#picture2{
+    height: 40px;
+    max-width: 100%;
+}
+.banner{
+    max-width: 100%;
+    position: relative;
+    padding: 30px 42px;
+}
+.banner img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.bannerIMG img{
+    max-width: 100%;
+}
+.cakeHome{
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.cakeHome img{
+    object-fit: cover;
+    width: 259.67px;
+    height: 256px;
+    display:block;
+    filter: blur(4px) brightness(0.5);
+}
+.imgBox{
+    position: relative;
+    width: 100%;
+    height: 256px;
+    overflow: hidden;
+}
+.overlay{
+    position: absolute;
+    top:0; left:0 ; right:0 ; bottom:0 ;
+    z-index: 1;
+}
+.yellow-filter{
+    background: rgba(255,225,128,0.7);
+}
+.green-filter{
+    background: rgba(0, 85, 45, 0.5);
+}
+.darkgreen-filter{
+    background: rgba(63,93,69,0.7);
+}
+.text1{
+    position: absolute;
+    z-index:2;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 24px;
+    color:#3F5D45;
+}
+.text2{
+    position: absolute;
+    z-index:2;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 24px;
+    color:white;
+}
+.text3{
+    position: absolute;
+    z-index:2;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 24px;
+    color:white;
+}
+
+.muffinHome{
+    max-width:100%;
+    height: 420px;
+    background-color: #EAF0ED;
+    margin-top: 200px;
+}
+.why-mobile{
+    display: none;
+}
+.word-mobile{
+    display:none;
+}
+.muffin-mobile{
+    display:none;
+}
+.muffinlogo{
+    width: 460px;
+    height: 460px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -80px;
+    margin-left: -90px;
+    flex-shrink: 0;
+}
+
+.muffinlogo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.muffin-container{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:40px;
+    padding:0 42px 0 0;
+}
+.word{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-bottom: 70px;
+    padding-left: 90px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 20px;
+    line-height: 1;
+}
+.word p{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 20px;
+    color: #8DA291;
+    line-height: 2;
+    font-weight: 300;
+}
+.p-word{
+    margin-left: 70px;
+}
+.why {
+    padding-left: 9.375rem;
+    flex-shrink: 0;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+.why img{
+    height: auto;
+    width: auto;
+    max-height: 500px;
+    object-fit: cover;
+}
+@media (max-width: 768px){
+    #picture{
+        position: relative;
+        display:block;
+        z-index: 2;
+    }
+    #picture1{
+        position: absolute;
+        left: 55%;
+        transform: translateX(-50%);
+        z-index: 1;
+        width: 100%;
+        height: 17.74px;
+        display:block;
+    }
+    #picture2{
+        display:none;
+    }
+    .links{
+        display:none;
+    }
+    .pictureHome{
+        position: relative;
+        width: 100%;
+        align-items: center;
+        display: flex;
+    }
+    .banner{
+        position: relative;
+        padding: 0;
+    }
+    .banner img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .cakeHome{
+        display: flex;
+        position: static;
+        justify-content: center;
+        transform: none;
+    }
+    .cakeHome img{
+        height: 256px;
+        max-width: 100%;
+    }
+    #whylogoS{
+        display: block;
+    }
+    #whylogoB{
+        display: none;
+    }       
+    .muffin-container{
+        display: block;
+        padding:20px;
+    }
+    .why {
+    text-align: center;
+    padding: 0;
+    padding-bottom: 100px;
+    }    
+    .why-mobile{
+        display:block;
+        text-align: center;
+        padding:42px;
+    }
+    .muffin-mobile{
+        height: 900px;
+        width: 100%;
+        display:block;
+        background-color: #EAF0ED;
+        text-align: center;
+    }
+    .muffin-mobile img{
+        width: 100%;
+        height: 500px;
+        object-fit: cover; 
+    }
+    .muffin-mobile p{
+        color:#8DA291;
+        line-height: 2;
+        font-size: 20px;
+        font-weight: 300
+    }
+    .muffinHome{
+        display: none;
+    }
+    .p-mobile{
+        padding-right: 10rem;
+        margin-bottom: 50px;
+        padding-top: 3rem;
+    }
+    .p-mobile p{
+        text-align:justify;
+        margin-left: 10rem;
+    }
+    .p-mobile1{
+        padding-right: 10rem;
+    }
+    .p-mobile1 p{
+        text-align:justify;
+        margin-left: 10rem;
+    }
+}
