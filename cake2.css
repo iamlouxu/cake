@@ -223,14 +223,57 @@ body {
     padding-left: 9.375rem;
     flex-shrink: 0;
     height: auto;
-    width: 100%;
+    width: auto;
     box-sizing: border-box;
 }
 .why img{
     height: auto;
-    width: auto;
+    width: 100%;
     max-height: 500px;
     object-fit: cover;
+}
+.rice-content{
+    background-color: #EAF0ED;
+    max-height:420px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 9rem;
+}
+.rice-content img{
+    object-fit: cover;
+}
+.ricelogo{
+    z-index: 1;
+    transform: translateY(-40px);
+    padding: 0px 42px;
+}
+.ricelogo img{
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+}
+.secondWhy{
+    z-index: 1;
+    transform: translateY(-40px);
+}
+.secondWhy img{
+    height: 500px;
+    width: 100%;
+}
+.secondWord {
+    margin-top: 20px;
+    writing-mode: vertical-rl;
+    padding: 0px 40px;
+}
+.secondWord p{
+    color:#8DA291;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 3;
+}
+.secondWord-1{
+    margin-left: 30px;
 }
 @media (max-width: 768px){
     #picture{
@@ -334,5 +377,8 @@ body {
     .p-mobile1 p{
         text-align:justify;
         margin-left: 10rem;
+    }
+    .riceHome{
+        display:none;
     }
 }
