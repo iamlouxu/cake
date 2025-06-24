@@ -275,6 +275,10 @@ body {
 .secondWord-1{
     margin-left: 30px;
 }
+.eat{
+    padding-top: 100px;
+    text-align: center;
+}
 @media (max-width: 768px){
     #picture{
         position: relative;
