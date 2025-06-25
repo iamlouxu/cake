@@ -361,10 +361,11 @@ body {
     display: none;
 }
 .footer {
+  margin-top: 60px;
   background-color: #EAF0ED;
   padding: 0;
   font-family: sans-serif;
-  color: #2f4f2f;
+  color: #3F5D45;
 }
 
 /* 上方訂閱區塊 */
@@ -374,7 +375,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px;
+  padding: 40px 120px;
   flex-wrap: wrap;
 }
 
@@ -416,17 +417,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 40px;
+  padding: 70px 120px;
   flex-wrap: wrap;
 }
-
 .footer-left {
   max-width: 50%;
 }
 
 .footer-logo-img {
   height: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 165px;
 }
 
 .footer-info {
@@ -434,6 +434,9 @@ body {
   padding: 0;
   margin: 0 0 20px 0;
   line-height: 1.8;
+  margin-bottom: 30px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
 }
 
 .footer-social a img {
@@ -443,21 +446,23 @@ body {
 }
 
 .footer-right {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .footer-slogan-img {
-  max-height: 200px;
+  max-height: 300px;
 }
 
-.footer-slogan-img.mobile {
-  display: none;
-}
 
 .footer-slogan-img.pc {
+  margin-bottom: 50px;
   display: block;
+}
+.copyright{
+    font-family: "Times New Roman", Times, serif;
+    font-weight: normal;
 }
 @media (max-width: 768px){
     #picture{
@@ -653,7 +658,7 @@ body {
 
   .footer-bottom {
     flex-direction: column;
-    padding: 20px;
+    padding: 40px;
   }
 
   .footer-left {
@@ -664,12 +669,6 @@ body {
     display: none;
   }
 
-  .footer-slogan-img.mobile {
-    display: block;
-    width: 100%;
-    margin-top: 20px;
-  }
-
   .footer-subscribe {
     font-size: 18px;
   }
@@ -677,5 +676,11 @@ body {
   .footer-input {
     flex-direction: row;
     width: 100%;
+  }
+  .footer-logo-img{
+    margin-bottom: 50px;
+  }
+  .footer-social{
+    margin-bottom: 30px;
   }
 }
