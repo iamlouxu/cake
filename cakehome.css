@@ -297,6 +297,10 @@ body {
   overflow: hidden;
 }
 
+.product-card a{
+    text-decoration: none;
+}
+
 .product-img {
   position: relative;
   width: 100%;
@@ -338,6 +342,7 @@ body {
   border: 1px solid #EAF0ED;
   font-size: 18px;
 }
+
 
 .product-name {
   color: #3F5D45;
