@@ -193,7 +193,28 @@ body {
   border: 1px solid #EAF0ED;
   text-align: center;
   padding: 16px;
-  font-size: 20px;
+  color: #3F5D45;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.social-btn1{
+  background-color: #fff;
+  border: 1px solid #EAF0ED;
+  text-align: center;
+  padding: 10px;
+  color: #3F5D45;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.social-btn2{
+  background-color: #fff;
+  border: 1px solid #EAF0ED;
+  text-align: center;
+  padding: 15px;
   color: #3F5D45;
   margin-bottom: 20px;
   cursor: pointer;
@@ -201,6 +222,14 @@ body {
 }
 
 .social-btn:hover {
+  background-color: #e0ebe7;
+}
+
+.social-btn1:hover{
+  background-color: #e0ebe7;
+}
+
+.social-btn2:hover{
   background-color: #e0ebe7;
 }
 
