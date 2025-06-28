@@ -1,0 +1,160 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;  /* 保證不出現水平滾動條 */
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PingFang TC', sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    padding: 30px 42px;
+}
+.nav-links{
+    display:flex;
+    align-items: center;
+    gap:60px;
+}
+.nav-links a{
+    color: #3F5D45;
+    text-decoration: none;
+}
+#picture{
+    display:none;
+}
+#picture1{
+    display:none;
+}
+#picture2{
+    height: 40px;
+    max-width: 100%;
+}
+.main-left{
+    padding:66.5px 42px;
+}
+.your-cart{
+    background-color:#EAF0ED;
+    height: 65px;
+    width: 60%;
+    text-align: center;
+    padding: 25px;
+    color:#3F5D45;
+    font-weight: 600;
+    font-size: 24px;
+}
+.cake-span{
+    display: flex;
+    flex-direction: column;
+}
+.pagination {
+  display: flex;
+  margin-top: 20px;
+}
+
+.pagination a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #EAF0ED;
+  text-decoration: none;
+  font-family: 'PingFang TC', sans-serif;
+  color: #3F5D45;
+  font-size: 18px;
+  font-weight: 300;
+  transition: 0.2s;
+}
+
+.pagination a img {
+  width: 24px;
+  height: 24px;
+}
+
+.pagination .active {
+  background-color: #3F5D45;
+  color: white;
+}
+
+.pagination .arrow {
+  padding: 0;
+}
+@media (max-width: 768px){
+    #picture{
+        position: relative;
+        display:block;
+        z-index: 2;
+    }
+    #picture1{
+        position: absolute;
+        left: 55%;
+        transform: translateX(-50%);
+        z-index: 1;
+        width: 100%;
+        height: 17.74px;
+        display:block;
+    }
+    #picture2{
+        display:none;
+    }
+    .links{
+        display: none;
+    }
+}
