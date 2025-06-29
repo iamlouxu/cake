@@ -173,7 +173,7 @@ input::placeholder {
 }
 
 .checkout-btn {
-  background-color: #fdd35c;
+  background-color: #FFE180;
   text-align: center;
   padding: 20px;
 }
@@ -470,6 +470,9 @@ input::placeholder {
     }
     .form-panel{
         display: block;
+    }
+    .mobile-click a{
+      text-decoration: none;
     }
     .checkout-wrapper{
         display: none;

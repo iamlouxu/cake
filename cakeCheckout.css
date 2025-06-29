@@ -306,7 +306,9 @@ body {
   padding: 16px;
   margin-top: 24px;
 }
-
+.mobile-click a{
+  text-decoration: none;
+}
 .summary-heading {
   background-color: #EAF0ED;
   color:#3F5D45;
@@ -340,6 +342,8 @@ body {
   padding: 30px;
   border: none;
   cursor: pointer;
+  text-align: center;
+  text-transform: none;
 }
 .footer {
   margin-top: 15px;
@@ -467,6 +471,10 @@ body {
     }
     .wrap{
       display:block
+    }
+    .summary-block a{
+      text-align: center;
+      text-decoration: none;
     }
     .container{
       display: none;
