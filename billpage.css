@@ -57,11 +57,6 @@ body {
   padding: 0;
   font-family: 'PingFang TC', sans-serif;
 }
-
-body {
-  background-color: #fff;
-}
-
 .navbar{
     display:flex;
     justify-content: space-between;
@@ -86,259 +81,178 @@ body {
     height: 40px;
     max-width: 100%;
 }
-
 body {
+  font-family: "Noto Sans TC", sans-serif;
   margin: 0;
-  padding: 0;
-  background: #fff;
+  background-color: #ffffff;
+  color: #ffffff;
 }
 
-.checkout-wrapper {
+.invoice-container {
   display: flex;
-  max-width: 1000px;
-  margin: 0 auto;
+  padding: 40px;
+  box-sizing: border-box;
+  justify-content: center;
 }
 
-.shipping-section {
-  background-color: #3f5f45;
-  padding: 30px;
-  flex: 2;
-  color: #fff;
+.invoice-form {
+  width: 40%;
+  background-color: #3F5D45;
+  padding: 40px;
 }
 
-.shipping-title {
-  font-size: 36px;
+.invoice-title {
+  font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
+  color: #ffffff;
 }
 
-.progress-bar {
+.invoice-steps {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   margin-bottom: 30px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.invoice-steps::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  right: 25px;
+  height: 2px;
+  background-color: #D3D3D3;
+  z-index: 0;
 }
 
 .step {
-  width: 18px;
-  height: 18px;
-  border: 2px solid #dcdcdc;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
-  background-color: #3f5f45;
-}
-
-.step.active {
-  background-color: #fff;
-}
-
-.line {
-  flex: 1;
-  height: 2px;
-  background-color: #dcdcdc;
-}
-
-.shipping-form {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  z-index: 1;
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
 }
 
-.form-row {
-  display: flex;
-  gap: 20px;
-}
-
-.form-group {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  margin-bottom: 6px;
-}
-
-input,
-select {
-  padding: 10px;
-  border: none;
-  background-color: #EAF0ED;
-}
-
-input::placeholder {
-  color: #bbb;
-}
-
-.full-width {
-  width: 100%;
-}
-
-.checkout-btn {
-  background-color: #fdd35c;
-  text-align: center;
-  padding: 20px;
-}
-
-.checkout-btn button {
-  background: none;
-  border: none;
-  font-size: 20px;
+.step.done {
+  background-color: #ffffff;
+  color: #355E4B;
   font-weight: bold;
-  color: #3f5f45;
-  cursor: pointer;
 }
 
-.summary-section {
-  flex: 1;
-  margin-left: 30px;
+.step.current {
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.invoice-options {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.order-summary,
-.cart-summary {
-  background-color: #EAF0ED;
-  padding: 20px;
-  color:#8DA291;
-}
-
-.order-summary h3,
-.cart-summary h3 {
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
   margin-bottom: 20px;
 }
 
-.summary-line {
-  display: flex;
-  justify-content: space-between;
-  padding: 4px 0;
-  width: 100%;
-  font-weight: 300;
+.option-btn {
+  flex: 1;
+  padding: 12px 0;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.summary-total {
+.option-btn.active {
+  background-color: #ffffff;
+  color: #355E4B;
+  font-weight: bold;
+}
+
+.invoice-label {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.invoice-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #ECEEEC;
+  border: none;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.invoice-submit {
+  width: 100%;
+  padding: 16px;
+  background-color: #FFE180;
+  color: #355E4B;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  margin-top: 24px;
+  cursor: pointer;
+}
+
+.invoice-summary {
+  width: 30%;
+  padding-left: 24px;
+  box-sizing: border-box;
+}
+
+.summary-block {
+  background-color: #EAF0ED;
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+.summary-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #8DA291;
+  text-align: center;
+}
+
+.summary-row {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 8px;
+  color: #8DA291;
+}
+
+.summary-row.total {
   font-weight: bold;
-  margin-top: 10px;
+  font-size: 18px;
+  padding-top: 20px;
 }
 
 .cart-item {
   display: flex;
   align-items: center;
-  gap: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
+  justify-content: space-around;
 }
 
 .cart-item img {
   width: 100px;
   height: 80px;
   object-fit: cover;
+  margin-right: 16px;
 }
 
-.cart-info p {
+.item-info p {
   margin: 0;
-  font-size: 18px;
   color: #8DA291;
-  font-weight: 300;
-}
-
-.cart-info .price {
-  font-weight: bold;
-  margin-top: 4px;
-  font-size: 20px;
-}
-.form-panel{
-    display: none;
-}
-.form-panel {
-  background-color: #3e5e47;
-  padding: 40px;
-  max-width: 100%;
-  color: white;
-}
-
-.form-title {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.step-bar {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.step-dot {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 2px solid #dcdcdc;
-  background-color: transparent;
-}
-
-.step-dot.active {
-  background-color: white;
-}
-
-.step-line {
-  flex-grow: 1;
-  height: 2px;
-  background-color: #dcdcdc;
-  margin: 0 8px;
-}
-
-.form-section {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 20px;
-}
-
-.form-label {
-  width: 48%;
-  font-weight: bold;
-}
-
-.input-field {
-  width: 48%;
-  padding: 12px;
-  border: none;
-  background-color: #f2f2f2;
-  color: #333;
   font-size: 16px;
-}
-
-.input-long {
-  width: 100%;
-  padding: 12px;
-  border: none;
-  background-color: #f2f2f2;
-  color: #333;
-  font-size: 16px;
-}
-
-.form-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  width: 100%;
-}
-
-.form-button {
-  background-color: #FFE180;
-  color: #3F5D45;
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 30px;
-  cursor: pointer;
-}
-.form-button{
-    display: none;
 }
 .footer {
   margin-top: 70px;
@@ -443,6 +357,7 @@ input::placeholder {
     font-family: "Times New Roman", Times, serif;
     font-weight: normal;
 }
+
 @media (max-width: 768px){
         #picture{
         position: relative;
@@ -464,19 +379,16 @@ input::placeholder {
     .links{
         display: none;
     }
-    .summary-section{
-        display:none;
-    }
-    .form-panel{
-        display: block;
-    }
-    .checkout-wrapper{
+    .invoice-summary{
         display: none;
     }
-    .form-button{
-        display: block;
+    .invoice-form{
+        width: 100%;
     }
-    .footer{
+    .invoice-container{
+        padding: 0px;
+    }
+            .footer{
         margin-top: 0px;
     }
         .footer-top {

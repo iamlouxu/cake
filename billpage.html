@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>發票 | Sweataste</title>
+    <link rel="icon" href="https://github.com/iamlouxu/cake/blob/main/cake.photo/logo-dark.png?raw=true" type="image/png">
+    <link rel="stylesheet" href="billpage.css">
+</head>
+<body>
+    <header class="navbar">
+        <picture class="pictureHome">
+            <a href="#"><img id="picture"  src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/dehaze-24px.png?raw=true" alt="漢堡圖"></a>
+            <a href="#"><img id="picture1" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/logotype-sm-dark.svg" alt="手機用品牌logo"></a>
+            <a href="#"><img id="picture2" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/logo-all-dark.svg" alt="電腦用品牌logo"></a>
+        </picture>
+        <nav class="nav-links">
+            <a href="#" class="links">首頁</a>
+            <a href="#" class="links">甜點</a>
+            <a href="#" class="links">登入</a>
+            <a href="#"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true" alt="購物車logo"></a>
+        </nav>
+    </header>
+    <div class="invoice-container">
+  <div class="invoice-form">
+    <h2 class="invoice-title">發票</h2>
+
+    <div class="invoice-steps">
+      <span class="step done">✔</span>
+      <span class="step done">✔</span>
+      <span class="step current"></span>
+    </div>
+
+    <div class="invoice-options">
+      <button class="option-btn active">電子發票</button>
+      <button class="option-btn">郵寄發票</button>
+    </div>
+
+    <label class="invoice-label" for="email">電子郵件信箱</label>
+    <input type="email" id="email" class="invoice-input" placeholder="example@email.com" />
+
+    <label class="invoice-label" for="tax">統一編號（選填）</label>
+    <input type="text" id="tax" class="invoice-input" placeholder="12345678" />
+
+    <button class="invoice-submit">確認結帳</button>
+  </div>
+
+  <div class="invoice-summary">
+    <div class="summary-block">
+      <h3 class="summary-title">訂單摘要</h3>
+      <div class="summary-row"><span>小計</span><span>NT$ 2,700</span></div>
+      <div class="summary-row"><span>運費</span><span>NT$ 300</span></div>
+      <div class="summary-row total"><span>總計</span><span>NT$ 3,000</span></div>
+    </div>
+
+    <div class="summary-block">
+      <h3 class="summary-title">購物清單</h3>
+      <div class="cart-item">
+        <img src="https://bit.ly/2QvsT63" alt="cake">
+        <div class="item-info">
+          <p>焦糖馬卡龍（2）</p>
+          <p>NT$ 900</p>
+        </div>
+      </div>
+      <div class="cart-item">
+        <img src="https://bit.ly/2zBDAxX" alt="cake">
+        <div class="item-info">
+          <p>焦糖馬卡龍（2）</p>
+          <p>NT$ 900</p>
+        </div>
+      </div>
+      <div class="cart-item">
+        <img src="https://bit.ly/2zKOP7w" alt="cake">
+        <div class="item-info">
+          <p>焦糖馬卡龍（2）</p>
+          <p>NT$ 900</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+        <div class="footer-top">
+            <div class="footer-subscribe">
+                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/logo-light.svg" alt="logo icon" class="footer-icon">
+                <span>訂閱你我的甜蜜郵件</span>
+            </div>
+            <div class="footer-input">
+                <input type="email" placeholder="請輸入電子郵件">
+                <button class="footer-btn">→</button>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-left">
+                <img class="footer-logo-img" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/logotype-lg-dark.svg" alt="Sweetaste Logo">
+                <ul class="footer-info">
+                    <li>07-1234-5678</li>
+                    <li>sweetaste@email.com</li>
+                    <li>800 高雄市新興區幸福路 520 號</li>
+                </ul>
+                <div class="footer-social">
+                    <a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/ic-line%40.svg" alt="line"></a>
+                    <a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/ic-facebook.svg" alt="facebook"></a>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <!-- 桌機版垂直圖 -->
+                <img class="footer-slogan-img pc" src="https://github.com/iamlouxu/cake/blob/main/cake.photo/sm-%E4%BB%8A%E5%A4%A9%E6%98%AF%E5%80%8B%E5%90%83%E7%94%9C%E9%BB%9E%E7%9A%84%E5%A5%BD%E6%97%A5%E5%AD%90@2x.png?raw=true" alt="今天是個吃甜點的好日子。">
+                <p class="copyright">© 2018 Sweetaste* All Rights Reserved</p>
+            </div>
+        </div>
+</footer>
+</body>
+</html>
