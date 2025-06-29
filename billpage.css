@@ -100,7 +100,9 @@ body {
   background-color: #3F5D45;
   padding: 40px;
 }
-
+.invoice-form a{
+  text-decoration: none;
+}
 .invoice-title {
   font-size: 32px;
   font-weight: bold;
@@ -200,8 +202,8 @@ body {
   border: none;
   margin-top: 24px;
   cursor: pointer;
+  text-align: center;
 }
-
 .invoice-summary {
   width: 30%;
   padding-left: 24px;

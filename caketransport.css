@@ -178,7 +178,8 @@ input::placeholder {
   padding: 20px;
 }
 
-.checkout-btn button {
+.checkout-btn a {
+  text-decoration: none;
   background: none;
   border: none;
   font-size: 20px;
